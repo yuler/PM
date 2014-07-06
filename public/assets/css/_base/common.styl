@@ -1,0 +1,76 @@
+html
+  height 100%
+
+body,input,button
+  margin 0px
+  height 100%
+  background color-background
+  font-family font-default
+  font-size font-size
+  color color-font
+  line-height line-height
+.messenger
+    margin-left: -200px
+.container
+  padding 15px 30px
+  height auto
+  width auto
+  margin auto
+  @media mini
+    width 768px
+
+.content.ng-hide-add,.content.ng-hide-remove
+  -webkit-transition all linear 0.5s
+  -moz-transition all linear 0.5s
+  -o-transition all linear 0.5s
+  transition all linear 0.5s
+  display:block!important;  
+.content.ng-hide-add.ng-hide-add-active,.content.ng-hide-remove
+  opacity 0
+.content.ng-hide-add,.content.ng-hide-remove.ng-hide-remove-active
+  opacity 1
+
+a 
+  text-decoration none
+a:link
+  color color-font
+  text-decoration none
+a:hover
+  cursor pointer
+  color color-font
+a:visited
+  color color-font
+
+form
+  width 100%
+  .input-wrapper
+    margin-top 20px
+    input
+      padding 6px 12px
+      font-size 14px
+      color color-font
+      outline none
+      border #cccccc 1px solid
+      border-radius 4px
+    input:focus
+      border #66afe9 1px solid
+      outline none
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    button
+      height 100%
+      font-size 14px
+      background-color #ffffff
+      border-color #cccccc
+      border #cccccc 1px solid
+      border-radius 4px
+    button:hover,button:focus
+      background-color #ebebeb
+      border-color #adadad
+      cursor pointer
+    button:active
+      background-image: none;
+      outline: 0;
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+              box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        

@@ -1,0 +1,21 @@
+<div id="login" class="container" >
+	<div class="content" ng-hide="fake">
+		<h2>用户登录</h2>
+		<div>
+			<form ng-submit="login()">
+				<div class="input-wrapper">
+					<input type="email" ng-model="user.email" placeholder="请输入邮箱地址" focus-me="true" ng-init="user.email='admin@admin.com'">
+ 				</div>
+				<div class="input-wrapper">
+					<input type="password" ng-model="user.password" placeholder="请输入密码" value="123" ng-init="user.password='admin'">
+				</div>
+				<div class="input-wrapper">
+					<button type="submit">登录</button>
+				</div>
+				<div class="input-wrapper">
+					<a href="#" class="btn">找回密码?</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
